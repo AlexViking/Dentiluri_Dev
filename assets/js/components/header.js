@@ -31,10 +31,28 @@ export function initializeHeader() {
 	}
 
 	// Render the header content
-	// TODO
+	renderHeader(header);
 
 	// Setup mobile menu toggle
-	// TODO
+	setupMobileMenu();
 }
 
 
+/**
+ * 
+ * Render the header content
+ * @param {HTMLElement} headerElement - The header container element
+*/
+
+function renderHeader(headerElement) {
+	// Get current page path for active state
+	const currentPath = window.location.pathname.split('/').pop() || PAGES.HOME;
+
+	// Create header HTML
+	const headerHTML = `
+		<div> Test <div>
+	
+	`
+	// Set the header content
+	headerElement.innerHTML = headerHTML;
+}
