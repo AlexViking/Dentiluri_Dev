@@ -50,7 +50,29 @@ function renderHeader(headerElement) {
 
 	// Create header HTML
 	const headerHTML = `
-		<div> Test <div>
+		<div class="header-container container">
+			// logo-container
+			<div class="logo-container">
+				<svg>
+				</svg>
+				<span class="logo-text">Dentiluri</span>
+			</div>
+
+			// desktop navigation
+			<nav class="desktop-nav">
+				<div class="nav-links">
+					<a href="index.html" class="nav-link ${currentPath === PAGES.HOME ? 'active' : ''}" >Home</a>
+					<a href="about.html" class="nav-link ${currentPath === PAGES.ABOUT ? 'active' : ''}" >About</a>
+					<a href="services.html" class="nav-link ${currentPath === PAGES.SERVICES ? 'active' : ''}" >Services</a>
+					<a href="contact.html" class="nav-link ${currentPath === PAGES.CONTACT ? 'active' : ''}" >Contact</a>
+				</div>
+			</nav>
+
+			// header-actions TODO
+			<div class="header-actions">
+
+			</div>
+		</div>
 	
 	`
 	// Set the header content
