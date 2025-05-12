@@ -16,3 +16,25 @@ const PAGES = {
 
 
 
+/**
+ * 
+ * Initialize the header component
+*/
+
+export function initializeHeader() {
+	// Get header element
+	const header = document.getElementById('site-header');
+
+	if (!header) {
+		console.error('Header element not found');
+		return;
+	}
+
+	// Render the header content
+	// TODO
+
+	// Setup mobile menu toggle
+	// TODO
+}
+
+
