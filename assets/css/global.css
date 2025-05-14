@@ -1,1 +1,486 @@
-/* TODO */
+/* ==========================================
+  GLOBAL CSS - Dentiluri Website
+  Base styles, variables, and utility classes
+========================================== */
+
+:root {
+	/* Colors */
+	--background: hsl(0, 0%, 100%);
+	--foreground: hsl(222.2, 84%, 4.9%);
+	--card: hsl(0, 0%, 100%);
+	--card-foreground: hsl(222.2, 84%, 4.9%);
+	--popover: hsl(0, 0%, 100%);
+	--popover-foreground: hsl(222.2, 84%, 4.9%);
+	--primary: hsl(173, 80%, 40%);
+	--primary-foreground: hsl(210, 40%, 98%);
+	--secondary: hsl(210, 40%, 96.1%);
+	--secondary-foreground: hsl(222.2, 47.4%, 11.2%);
+	--muted: hsl(210, 40%, 96.1%);
+	--muted-foreground: hsl(215.4, 16.3%, 46.9%);
+	--accent: hsl(210, 40%, 96.1%);
+	--accent-foreground: hsl(222.2, 47.4%, 11.2%);
+	--destructive: hsl(0, 84.2%, 60.2%);
+	--destructive-foreground: hsl(210, 40%, 98%);
+	--border: hsl(214.3, 31.8%, 91.4%);
+	--input: hsl(214.3, 31.8%, 91.4%);
+	--ring: hsl(173, 80%, 40%);
+	--radius: 0.5rem;
+
+	/* Shadows*/
+	--shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	--shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+		0 2px 4px -2px rgb(0 0 0 / 0.1);
+	--shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+		0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+	/* Font sizes */
+	--font-size-xs: 0.75rem;
+	--font-size-sm: 0.875rem;
+	--font-size-base: 1rem;
+	--font-size-lg: 1.125rem;
+	--font-size-xl: 1.25rem;
+	--font-size-2xl: 1.5rem;
+	--font-size-3xl: 1.875rem;
+	--font-size-4xl: 2.25rem;
+	--font-size-5xl: 3rem;
+	--font-size-6xl: 3.75rem;
+
+	/* Spacing */
+	--spacing-1: 0.25rem;
+	--spacing-2: 0.5rem;
+	--spacing-3: 0.75rem;
+	--spacing-4: 1rem;
+	--spacing-6: 1.5rem;
+	--spacing-8: 2rem;
+	--spacing-12: 3rem;
+	--spacing-16: 4rem;
+	--spacing-24: 6rem;
+	--spacing-32: 8rem;
+
+	/* Animations */
+	--transition-fast: 150ms;
+	--transition-normal: 250ms;
+	--transition-slow: 350ms;
+}
+
+/* Dark theme colors */
+.dark {
+	--background: hsl(222.2, 84%, 4.9%);
+	--foreground: hsl(210, 40%, 98%);
+	--card: hsl(222.2, 84%, 4.9%);
+	--card-foreground: hsl(210, 40%, 98%);
+	--popover: hsl(222.2, 84%, 4.9%);
+	--popover-foreground: hsl(210, 40%, 98%);
+	--primary: hsl(173, 80%, 40%);
+	--primary-foreground: hsl(222.2, 47.4%, 11.2%);
+	--secondary: hsl(217.2, 32.6%, 17.5%);
+	--secondary-foreground: hsl(210, 40%, 98%);
+	--muted: hsl(217.2, 32.6%, 17.5%);
+	--muted-foreground: hsl(215, 20.2%, 65.1%);
+	--accent: hsl(217.2, 32.6%, 17.5%);
+	--accent-foreground: hsl(210, 40%, 98%);
+	--destructive: hsl(0, 62.8%, 30.6%);
+	--destructive-foreground: hsl(210, 40%, 98%);
+	--border: hsl(217.2, 32.6%, 17.5%);
+	--input: hsl(217.2, 32.6%, 17.5%);
+	--ring: hsl(173, 80%, 40%);
+}
+
+/* === Reset and Base Styles === */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	color: var(--foreground);
+	background-color: var(--background);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: background-color var(--transition-normal);
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+/* === Layout === */
+.container {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 var(--spacing-8);
+}
+
+.grid-2-columns {
+	display: grid;
+	gap: var(--spacing-8);
+}
+
+.grid-3-columns {
+	display: grid;
+	gap: var(--spacing-8);
+}
+
+@media (min-width: 768px) {
+	.grid-2-columns {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.grid-3-columns {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1024px) {
+	.grid-3-columns {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.gap-1 {
+	gap: var(--spacing-1);
+}
+
+.gap-2 {
+	gap: var(--spacing-2);
+}
+
+.gap-4 {
+	gap: var(--spacing-4);
+}
+
+.gap-6 {
+	gap: var(--spacing-6);
+}
+
+/* === Typography === */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: var(--spacing-4);
+}
+
+h1 {
+	font-size: var(--font-size-4xl);
+}
+
+h2 {
+	font-size: var(--font-size-3xl);
+}
+
+h3 {
+	font-size: var(--font-size-xl);
+}
+
+p {
+	margin-bottom: var(--spacing-4);
+}
+
+.text-sm {
+	font-size: var(--font-size-sm);
+}
+
+.text-lg {
+	font-size: var(--font-size-lg);
+}
+
+.text-xl {
+	font-size: var(--font-size-xl);
+}
+
+.font-medium {
+	font-weight: 500;
+}
+
+.font-bold {
+	font-weight: 700;
+}
+
+.text-muted {
+	color: var(--muted-foreground);
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* === Buttons === */
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: var(--spacing-3) var(--spacing-6);
+	font-weight: 500;
+	border-radius: var(--radius);
+	transition: all var(--transition-fast);
+	white-space: nowrap;
+}
+
+.btn-lg {
+	padding: var(--spacing-4) var(--spacing-8);
+	font-size: var(--font-size-lg);
+}
+
+.btn-primary {
+	background-color: var(--primary);
+	color: var(--primary-foreground);
+	border: 1px solid var(--primary);
+}
+
+.btn-primary:hover {
+	background-color: hsl(173, 80%, 35%);
+}
+
+.btn-outline {
+	background-color: transparent;
+	border: 1px solid var(--border);
+	color: var(--foreground);
+}
+
+.btn-outline:hover {
+	background-color: var(--secondary);
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+.btn .icon-right {
+	margin-left: var(--spacing-2);
+}
+
+/* === Forms === */
+.form-group {
+	margin-bottom: var(--spacing-4);
+}
+
+.form-row {
+	display: grid;
+	gap: var(--spacing-4);
+	margin-bottom: var(--spacing-4);
+}
+
+@media (min-width: 576px) {
+	.form-row {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+label {
+	display: block;
+	font-size: var(--font-size-sm);
+	font-weight: 500;
+	margin-bottom: var(--spacing-2);
+}
+
+input,
+textarea,
+select {
+	width: 100%;
+	padding: var(--spacing-3);
+	border-radius: var(--radius);
+	border: 1px solid var(--input);
+	background-color: var(--background);
+	transition: border-color var(--transition-fast);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border-color: var(--ring);
+	box-shadow: 0 0 0 2px color-mix(in srgb, var(--ring) 20%, transparent);
+}
+
+textarea {
+	min-height: 100px;
+	resize: vertical;
+}
+
+/* === Badges and Icons === */
+.badge {
+	display: inline-block;
+	padding: var(--spacing-1) var(--spacing-3);
+	font-size: var(--font-size-sm);
+	font-weight: 500;
+	border-radius: var(--radius);
+	background-color: color-mix(in srgb, var(--primary) 15%, transparent);
+	color: var(--primary);
+	margin-bottom: var(--spacing-2);
+}
+
+.icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	stroke-width: 2;
+}
+
+/* === Cards === */
+.card {
+	background-color: var(--card);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+	overflow: hidden;
+	box-shadow: var(--shadow-sm);
+	transition: box-shadow var(--transition-fast),
+		transform var(--transition-fast);
+}
+
+.card:hover {
+	box-shadow: var(--shadow-md);
+	transform: translateY(-2px);
+}
+
+.card-header {
+	padding: var(--spacing-6);
+	border-bottom: 1px solid var(--border);
+}
+
+.card-content {
+	padding: var(--spacing-6);
+}
+
+.card-footer {
+	padding: var(--spacing-6);
+	border-top: 1px solid var(--border);
+}
+
+/* === Sections === */
+section {
+	padding: var(--spacing-16) 0;
+}
+
+section:nth-child(even) {
+	background-color: var(--secondary);
+}
+
+.section-header {
+	margin-bottom: var(--spacing-12);
+}
+
+/* === Utilities === */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+@media (min-width: 768px) {
+	.md\:block {
+		display: block;
+	}
+
+	.md\:hidden {
+		display: none;
+	}
+
+	.md\:flex {
+		display: flex;
+	}
+}
+
+/* === Animation === */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.fade-in {
+	animation: fadeIn var(--transition-normal) ease-in;
+}
+
+/* Rotating loading indicator */
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.loading {
+	animation: rotate 1s linear infinite;
+}
