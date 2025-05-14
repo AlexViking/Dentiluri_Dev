@@ -1,5 +1,5 @@
 /**
- * Theme Toggle Component for BrightSmile Dental Website
+ * Theme Toggle Component for Dentiluri Website
  * Provides light/dark theme switching functionality
  */
 

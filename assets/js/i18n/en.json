@@ -1,1 +1,347 @@
-{}
+{
+	"common": {
+		"siteName": "Dentiluri",
+		"phone": "(555) 123-4567",
+		"bookAppointment": "Book Appointment",
+		"learnMore": "Learn More",
+		"contactUs": "Contact Us"
+	},
+	"nav": {
+		"home": "Home",
+		"about": "About",
+		"services": "Services",
+		"appointment": "Appointment",
+		"contact": "Contact"
+	},
+	"footer": {
+		"copyright": "© {0} Dentiluri. All rights reserved.",
+		"privacyPolicy": "Privacy Policy",
+		"termsOfService": "Terms of Service"
+	},
+	"home": {
+		"hero": {
+			"title": "Healthy & Beautiful Smiles, Guaranteed",
+			"subtitle": "Trust our experienced team for comprehensive dental care. We're dedicated to your long-term oral health and a smile you'll love."
+		},
+		"services": {
+			"title": "Comprehensive Dental Care",
+			"subtitle": "We offer a wide range of dental services to meet all your oral health needs in one convenient location.",
+			"badge": "Why Choose Us",
+			"preventiveCare": {
+				"title": "Preventive Care",
+				"description": "Regular check-ups, cleanings, and screenings to prevent dental issues before they start."
+			},
+			"cosmeticDentistry": {
+				"title": "Cosmetic Dentistry",
+				"description": "Enhance your smile with teeth whitening, veneers, and other cosmetic procedures."
+			},
+			"restorativeServices": {
+				"title": "Restorative Services",
+				"description": "Repair damaged teeth with fillings, crowns, bridges, and dental implants."
+			},
+			"familyDentistry": {
+				"title": "Family Dentistry",
+				"description": "Dental care for patients of all ages, from children to seniors."
+			},
+			"emergencyCare": {
+				"title": "Emergency Care",
+				"description": "Prompt treatment for dental emergencies such as toothaches or broken teeth."
+			},
+			"advancedTechnology": {
+				"title": "Advanced Technology",
+				"description": "State-of-the-art equipment and techniques for more comfortable and effective treatments."
+			}
+		},
+		"team": {
+			"title": "Meet Our Dental Team",
+			"subtitle": "Our experienced dentists and staff are dedicated to providing you with the highest quality care.",
+			"meetFullTeam": "Meet Our Full Team"
+		},
+		"testimonials": {
+			"title": "What Our Patients Say",
+			"badge": "Testimonials"
+		},
+		"appointment": {
+			"title": "Book Your Appointment",
+			"subtitle": "We're accepting new patients! Schedule your appointment online or give us a call.",
+			"badge": "Schedule a Visit",
+			"convenientScheduling": {
+				"title": "Convenient Scheduling",
+				"description": "Book online 24/7 or call during office hours"
+			},
+			"extendedHours": {
+				"title": "Extended Hours",
+				"description": "Open evenings and select Saturdays for your convenience"
+			},
+			"insuranceAccepted": {
+				"title": "Insurance Accepted",
+				"description": "We work with most major insurance providers"
+			},
+			"scheduleNow": "Schedule Now"
+		},
+		"contact": {
+			"title": "Contact Us",
+			"subtitle": "Have questions or ready to schedule? Reach out to our friendly team.",
+			"location": {
+				"title": "Location",
+				"address": "123 Dental Way, Cityville, ST 12345"
+			},
+			"phone": {
+				"title": "Phone"
+			},
+			"hours": {
+				"title": "Hours",
+				"weekdays": "Monday-Friday: 8am-6pm",
+				"saturday": "Saturday: 9am-2pm (Select Dates)",
+				"sunday": "Sunday: Closed"
+			},
+			"form": {
+				"firstName": "First name",
+				"lastName": "Last name",
+				"email": "Email",
+				"message": "Message",
+				"placeholder": "How can we help you?",
+				"sendMessage": "Send Message",
+				"success": "Your message has been sent. We'll get back to you soon!",
+				"sending": "Sending..."
+			}
+		}
+	},
+	"about": {
+		"hero": {
+			"title": "About Dentiluri",
+			"subtitle": "Providing exceptional dental care to our community for over 20 years."
+		},
+		"story": {
+			"title": "Our Story",
+			"content1": "Dentiluri was founded in 2003 by Dr. Sarah Johnson with a simple mission: to provide high-quality, compassionate dental care to patients of all ages. What started as a small practice has grown into a trusted dental care provider in our community.",
+			"content2": "Our team of experienced dentists, hygienists, and staff are dedicated to making your dental experience as comfortable and stress-free as possible. We believe in building long-term relationships with our patients based on trust, respect, and exceptional care.",
+			"content3": "At Dentiluri, we stay at the forefront of dental technology and techniques to ensure you receive the most effective and comfortable treatments available."
+		},
+		"team": {
+			"title": "Our Team",
+			"subtitle": "Meet the dedicated professionals who make Dentiluri special."
+		},
+		"mission": {
+			"title": "Our Mission & Values",
+			"content": "At Dentiluri, our mission is to improve the oral health of our community by providing comprehensive, personalized dental care in a comfortable and welcoming environment.",
+			"values": {
+				"excellence": {
+					"title": "Excellence",
+					"description": "We strive for excellence in all aspects of our practice, from clinical care to customer service."
+				},
+				"compassion": {
+					"title": "Compassion",
+					"description": "We treat each patient with kindness, empathy, and respect, understanding that dental visits can be stressful for many."
+				},
+				"education": {
+					"title": "Education",
+					"description": "We believe in empowering our patients with knowledge about their oral health so they can make informed decisions."
+				},
+				"innovation": {
+					"title": "Innovation",
+					"description": "We continuously invest in advanced technology and techniques to provide the best possible care."
+				}
+			}
+		},
+		"facility": {
+			"title": "Our Facility",
+			"subtitle": "Our modern dental office is designed with your comfort in mind."
+		},
+		"cta": {
+			"title": "Ready to Schedule?",
+			"subtitle": "We're accepting new patients and would love to welcome you to our dental family."
+		}
+	},
+	"services": {
+		"hero": {
+			"title": "Our Dental Services",
+			"subtitle": "Comprehensive dental care for the whole family, all in one convenient location."
+		},
+		"preventive": {
+			"badge": "Preventive Care",
+			"title": "Maintain Your Smile",
+			"content": "Regular preventive care is the foundation of good oral health. Our comprehensive preventive services help you maintain a healthy smile and prevent dental problems before they start.",
+			"services": [
+				"Regular dental check-ups and cleanings",
+				"Digital X-rays with minimal radiation",
+				"Oral cancer screenings",
+				"Fluoride treatments",
+				"Dental sealants",
+				"Custom mouthguards and nightguards"
+			]
+		},
+		"cosmetic": {
+			"badge": "Cosmetic Dentistry",
+			"title": "Enhance Your Smile",
+			"content": "Our cosmetic dental services can help you achieve the beautiful, confident smile you've always wanted. We offer a range of treatments to address discoloration, misalignment, and other aesthetic concerns.",
+			"services": [
+				"Professional teeth whitening",
+				"Porcelain veneers",
+				"Dental bonding",
+				"Tooth-colored fillings",
+				"Smile makeovers",
+				"Invisalign clear aligners"
+			]
+		},
+		"restorative": {
+			"badge": "Restorative Dentistry",
+			"title": "Repair Your Smile",
+			"content": "Our restorative dental services can help repair damaged teeth and replace missing teeth, restoring both function and appearance to your smile.",
+			"services": [
+				"Dental fillings",
+				"Dental crowns and bridges",
+				"Dental implants",
+				"Full and partial dentures",
+				"Root canal therapy",
+				"Inlays and onlays"
+			]
+		},
+		"specialized": {
+			"title": "Specialized Services",
+			"subtitle": "We offer a range of specialized dental services to meet all your oral health needs."
+		},
+		"insurance": {
+			"title": "Insurance & Financing",
+			"subtitle": "We work with most major insurance providers and offer flexible financing options.",
+			"sections": {
+				"insurance": {
+					"title": "Insurance",
+					"content": "We accept most major dental insurance plans and are in-network with many providers. Our team will help you maximize your benefits."
+				},
+				"payment": {
+					"title": "Payment Options",
+					"content": "We accept cash, checks, and all major credit cards for your convenience."
+				},
+				"financing": {
+					"title": "Financing",
+					"content": "We offer flexible financing options through CareCredit to help make dental care more affordable."
+				}
+			},
+			"moreInfo": "Contact Us for More Information"
+		},
+		"cta": {
+			"title": "Ready to Schedule?",
+			"subtitle": "Book your appointment today and take the first step toward a healthier smile."
+		}
+	},
+	"contact": {
+		"hero": {
+			"title": "Contact Us",
+			"subtitle": "We're here to answer your questions and help you schedule your appointment."
+		},
+		"info": {
+			"title": "Get in Touch",
+			"subtitle": "Have questions or ready to schedule? Reach out to our friendly team.",
+			"location": {
+				"title": "Location",
+				"address": "123 Dental Way, Cityville, ST 12345",
+				"detail": "Conveniently located in downtown Cityville with ample parking."
+			},
+			"phone": {
+				"title": "Phone",
+				"number": "(555) 123-4567",
+				"detail": "Call us during office hours to speak with our team."
+			},
+			"email": {
+				"title": "Email",
+				"address": "info@Dentiluri.com",
+				"detail": "We'll respond to your email within 24 business hours."
+			}
+		},
+		"hours": {
+			"title": "Office Hours",
+			"weekdays": "Monday - Thursday",
+			"weekdayHours": "8:00 AM - 6:00 PM",
+			"friday": "Friday",
+			"fridayHours": "8:00 AM - 5:00 PM",
+			"saturday": "Saturday",
+			"saturdayHours": "9:00 AM - 2:00 PM (Select Dates)",
+			"sunday": "Sunday",
+			"sundayHours": "Closed"
+		},
+		"social": {
+			"title": "Follow Us",
+			"facebook": "Facebook",
+			"instagram": "Instagram",
+			"twitter": "Twitter",
+			"linkedin": "LinkedIn"
+		},
+		"form": {
+			"title": "Send Us a Message",
+			"subtitle": "Fill out the form below and we'll get back to you as soon as possible.",
+			"firstName": "First name",
+			"lastName": "Last name",
+			"email": "Email",
+			"phone": "Phone",
+			"subject": "Subject",
+			"message": "Message",
+			"sendMessage": "Send Message"
+		},
+		"map": {
+			"title": "Find Us",
+			"subtitle": "We're conveniently located in downtown Cityville."
+		},
+		"cta": {
+			"title": "Ready to Schedule?",
+			"subtitle": "Book your appointment today and take the first step toward a healthier smile."
+		}
+	},
+	"appointment": {
+		"hero": {
+			"title": "Book Your Appointment",
+			"subtitle": "Schedule your dental visit online in just a few easy steps."
+		},
+		"form": {
+			"title": "Appointment Details",
+			"subtitle": "Please fill out the form to schedule your appointment. All fields are required.",
+			"firstName": "First name",
+			"lastName": "Last name",
+			"email": "Email",
+			"phone": "Phone",
+			"appointmentType": "Appointment Type",
+			"appointmentTypes": {
+				"select": "Select appointment type",
+				"checkup": "Regular Check-up & Cleaning",
+				"emergency": "Emergency Visit",
+				"consultation": "Consultation",
+				"cosmetic": "Cosmetic Dentistry",
+				"restorative": "Restorative Treatment",
+				"orthodontic": "Orthodontic Treatment",
+				"pediatric": "Pediatric Dentistry"
+			},
+			"preferredDentist": "Preferred Dentist (Optional)",
+			"dentists": {
+				"noPreference": "No preference",
+				"drJohnson": "Dr. Sarah Johnson",
+				"drChen": "Dr. Michael Chen",
+				"drRodriguez": "Dr. Emily Rodriguez",
+				"drWilson": "Dr. James Wilson"
+			},
+			"newPatient": "Are you a new patient?",
+			"yes": "Yes",
+			"no": "No",
+			"notes": "Additional Notes (Optional)",
+			"notesPlaceholder": "Please share any specific concerns or questions you have.",
+			"requestAppointment": "Request Appointment"
+		},
+		"timeSlots": {
+			"title": "Available Time Slots",
+			"subtitle": "Select a date and time that works best for you. Our team will confirm your appointment.",
+			"chooseDate": "Choose a Date",
+			"chooseTime": "Choose a Time",
+			"dateSub": "Select from available dates in the calendar below",
+			"timeSub": "Select from available time slots for April 15, 2025"
+		},
+		"expectation": {
+			"title": "What to Expect",
+			"subtitle": "Information for your upcoming appointment",
+			"points": [
+				"Please arrive 15 minutes early to complete any necessary paperwork.",
+				"Bring your insurance card and photo ID.",
+				"If you have dental x-rays from the past 6 months, please bring them with you."
+			],
+			"questions": "Questions? Contact Us"
+		}
+	}
+}

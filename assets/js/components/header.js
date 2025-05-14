@@ -48,26 +48,24 @@ function renderHeader(headerElement) {
 	// Get current page path for active state
 	const currentPath = window.location.pathname.split('/').pop() || PAGES.HOME;
 
+
+
 	// Create header HTML
 	const headerHTML = `
     	<div class="header-container container">
     	  <div class="logo-container">
-		    // TODO
-    	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
-    	      <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" />
-    	      <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
-    	      <path d="M12 2v2" />
-    	      <path d="M12 22v-2" />
-    	      <path d="m17 20.66-1-1.73" />
-    	      <path d="M11 10.27 7 3.34" />
-    	      <path d="m20.66 17-1.73-1" />
-    	      <path d="m3.34 7 1.73 1" />
-    	      <path d="M14 12h8" />
-    	      <path d="M2 12h2" />
-    	      <path d="m20.66 7-1.73 1" />
-    	      <path d="m3.34 17 1.73-1" />
-    	      <path d="m17 3.34-1 1.73" />
-    	      <path d="m7 20.66 1-1.73" />
+		    <style>
+				.s0 { fill: var(--primary) }
+				.s1 { fill: var(--foreground) }
+			</style>
+
+    	    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+			<g id="logo">
+				<path id="Path 53" class="s0" d="m105.1 39.7c-18.8-3.4-36.9 0.3-52.3 17.5-15.4 16.9-19.5 43.8-18 72.6 5.3 95.5 44.7 162.1 105.5 233-45.4-77-74.6-164-78.5-234.4-1.2-22.5 1.2-42.4 10.9-53.2 8.1-8.9 17.6-10.8 27.6-9 42.4 7.7 97.4 62.1 156.4 20.6l0.6-0.4c4.3-2.5 32.6-18.3 61.9-6.7 30.8 12.1 50.2 49.8 42.2 90.1 3.1-15.2 4.1-28.8 4.1-39.9 0.1-26 0.2-52.7-17.9-72.7-35.1-38.9-78.9-10.4-114.1 12.5-34.5 22.4-87.8-22.6-128.4-30z"/>
+				<path id="Path 54" class="s1" d="m299.1 226c0 21.6-8.9 41.1-23.2 55.2q-5.8 5.3-12.3 9.8-0.1 0.1-0.2 0.2c-18 12.4-39.9 19.6-63.4 19.6-10.5 0-20.6-1.4-30.1-4.1v-24c8.1 0 16.1-0.8 23.8-2.5 27.8-6 51.8-22.4 67.7-44.8q0-0.1 0-0.1 3.2-4.3 5.7-9c5.5-10.1 8.6-21.8 8.6-34.1q0-1.5 0-3c1-3.4 2.7-6.6 5.2-9.3q0.4-0.4 0.8-0.8 0.4-0.5 0.9-0.9c10.3 13.2 16.5 29.7 16.5 47.8z"/>
+				<path id="Path 55" class="s0" d="m277.6 163.2c-2.5-2.5-4.4-5.5-5.5-8.7-0.4-1.1-2-1.1-2.4 0-1.1 3.1-2.8 6-5.2 8.4q-0.1 0.2-0.2 0.3c-2.6 2.5-5.5 4.3-8.7 5.4-1.1 0.4-1.1 2.1 0 2.5 3.2 1.1 6.1 2.9 8.6 5.4 2.6 2.5 4.4 5.5 5.5 8.7 0.4 1.1 2 1.1 2.4-0.1 1-2.8 2.6-5.5 4.7-7.8q0.4-0.4 0.8-0.8c2.5-2.5 5.5-4.3 8.6-5.4 1.2-0.4 1.2-2.1 0-2.5-3.1-1.1-6.1-2.9-8.6-5.4z"/>
+				<path id="Path 56" class="s1" d="m271.1 135.6v0.1c0 7.1-2.2 13.6-5.9 19q-0.1 0-0.1 0c-1.7 2.5-3.7 4.7-5.9 6.6-3.7 2.7-8 4.3-12.5 4.7q-11.5 0-22.9 0-27 0.1-53.9 0.2v116.5c-10.6 0-20.9-1.4-30.6-4.2v-142.9z"/>
+			</g>
     	    </svg>
     	    <span class="logo-text" data-i18n="common.siteName">Dentiluri</span>
     	  </div>
