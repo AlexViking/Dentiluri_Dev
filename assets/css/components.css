@@ -1,1 +1,458 @@
-/* TODO */
+/* ==========================================
+  COMPONENTS CSS - Dentiluri Website
+  Styles for reusable components
+========================================== */
+
+/* === Header === */
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	width: 100%;
+	height: 4rem;
+	border-bottom: 1px solid var(--border);
+	background-color: rgba(var(--background-rgb), 0.95);
+	backdrop-filter: blur(8px);
+}
+
+.header-container {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-2);
+}
+
+.logo-icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	color: var(--primary);
+}
+
+.logo-text {
+	font-size: var(--font-size-xl);
+	font-weight: 700;
+}
+
+.desktop-nav {
+	display: none;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-6);
+}
+
+.nav-link {
+	font-size: var(--font-size-sm);
+	font-weight: 500;
+	transition: color var(--transition-fast);
+}
+
+.nav-link:hover {
+	color: var(--primary);
+}
+
+.nav-link.active {
+	font-weight: 600;
+	color: var(--primary);
+}
+
+.header-actions {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-4);
+}
+
+.desktop-actions {
+	display: none;
+}
+
+.mobile-actions {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-2);
+}
+
+.menu-button {
+	display: flex;
+	padding: var(--spacing-2);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
+	.desktop-nav {
+		display: flex;
+	}
+
+	.desktop-actions {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-2);
+	}
+
+	.mobile-actions,
+	.menu-button {
+		display: none;
+	}
+}
+
+/* Mobile navigation menu */
+.mobile-menu {
+	position: fixed;
+	top: 4rem;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 4rem);
+	background-color: var(--background);
+	z-index: 40;
+	padding: var(--spacing-6);
+	transform: translateX(-100%);
+	transition: transform var(--transition-normal);
+}
+
+.mobile-menu.open {
+	transform: translateX(0);
+}
+
+.mobile-menu .nav-links {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--spacing-6);
+}
+
+.mobile-menu .nav-link {
+	font-size: var(--font-size-lg);
+}
+
+/* === Footer === */
+.site-footer {
+	width: 100%;
+	border-top: 1px solid var(--border);
+	padding: var(--spacing-6) 0;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--spacing-4);
+}
+
+.footer-copyright {
+	text-align: center;
+	font-size: var(--font-size-sm);
+	color: var(--muted-foreground);
+}
+
+.footer-links {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-4);
+	font-size: var(--font-size-sm);
+	color: var(--muted-foreground);
+}
+
+.footer-link {
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+	color: var(--foreground);
+}
+
+@media (min-width: 768px) {
+	.footer-container {
+		flex-direction: row;
+		height: 6rem;
+	}
+
+	.footer-copyright {
+		text-align: left;
+	}
+}
+
+/* === Theme Toggle === */
+.theme-toggle {
+	position: relative;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 9999px;
+	border: 1px solid var(--border);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	overflow: hidden;
+}
+
+.sun-icon,
+.moon-icon {
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	transition: all var(--transition-normal);
+}
+
+.sun-icon {
+	opacity: 1;
+	transform: rotate(0) scale(1);
+}
+
+.moon-icon {
+	opacity: 0;
+	transform: rotate(90deg) scale(0);
+}
+
+.dark .sun-icon {
+	opacity: 0;
+	transform: rotate(-90deg) scale(0);
+}
+
+.dark .moon-icon {
+	opacity: 1;
+	transform: rotate(0) scale(1);
+}
+
+/* === Language Switcher === */
+.language-switcher {
+	position: relative;
+}
+
+.language-toggle {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 9999px;
+	border: 1px solid var(--border);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+}
+
+.language-dropdown {
+	position: absolute;
+	top: calc(100% + var(--spacing-2));
+	right: 0;
+	min-width: 10rem;
+	background-color: var(--popover);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow-md);
+	overflow: hidden;
+	z-index: 10;
+	transform-origin: top;
+	transition: transform var(--transition-fast), opacity var(--transition-fast);
+	opacity: 0;
+	transform: scaleY(0);
+}
+
+.language-dropdown.show {
+	opacity: 1;
+	transform: scaleY(1);
+}
+
+.language-option {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--spacing-3);
+	cursor: pointer;
+	transition: background-color var(--transition-fast);
+}
+
+.language-option:hover {
+	background-color: var(--secondary);
+}
+
+.language-option .check-icon {
+	width: 1rem;
+	height: 1rem;
+	margin-left: var(--spacing-2);
+}
+
+/* === Service Card === */
+.service-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: var(--spacing-6);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow-sm);
+	background-color: var(--card);
+	transition: box-shadow var(--transition-fast),
+		transform var(--transition-fast);
+}
+
+.service-card:hover {
+	box-shadow: var(--shadow-md);
+	transform: translateY(-2px);
+}
+
+.service-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 9999px;
+	background-color: color-mix(in srgb, var(--primary) 15%, transparent);
+	margin-bottom: var(--spacing-4);
+}
+
+.service-icon .icon {
+	color: var(--primary);
+}
+
+.service-card h3 {
+	margin-bottom: var(--spacing-2);
+	font-size: var(--font-size-xl);
+	text-align: center;
+}
+
+.service-card p {
+	text-align: center;
+	color: var(--muted-foreground);
+	margin-bottom: 0;
+}
+
+/* === Team Member === */
+.team-member {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: var(--spacing-4);
+}
+
+.team-member img {
+	width: 150px;
+	height: 150px;
+	border-radius: 9999px;
+	object-fit: cover;
+	margin-bottom: var(--spacing-4);
+}
+
+.team-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.team-info h3 {
+	margin-bottom: var(--spacing-2);
+}
+
+.member-title {
+	color: var(--primary);
+	font-size: var(--font-size-sm);
+	font-weight: 500;
+	margin-bottom: var(--spacing-2);
+}
+
+.member-bio {
+	color: var(--muted-foreground);
+	font-size: var(--font-size-sm);
+	margin-bottom: 0;
+}
+
+/* === Testimonial === */
+.testimonial {
+	padding: var(--spacing-6);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow-sm);
+	margin-bottom: var(--spacing-6);
+}
+
+.rating {
+	margin-bottom: var(--spacing-2);
+}
+
+.star {
+	color: #f59e0b; /* Amber/yellow color for stars */
+	display: inline-block;
+}
+
+.testimonial p {
+	color: var(--muted-foreground);
+}
+
+.testimonial .author {
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* === Feature === */
+.feature {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--spacing-4);
+	margin-bottom: var(--spacing-4);
+}
+
+.feature-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 9999px;
+	background-color: color-mix(in srgb, var(--primary) 15%, transparent);
+}
+
+.feature-icon .icon {
+	color: var(--primary);
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.feature h3 {
+	margin-bottom: var(--spacing-1);
+	font-weight: 500;
+}
+
+.feature p {
+	font-size: var(--font-size-sm);
+	color: var(--muted-foreground);
+	margin-bottom: 0;
+}
+
+/* === Contact Item === */
+.contact-item {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--spacing-4);
+	margin-bottom: var(--spacing-4);
+}
+
+.contact-item .icon {
+	color: var(--primary);
+	margin-top: 0.125rem;
+}
+
+.contact-item h3 {
+	margin-bottom: var(--spacing-1);
+	font-weight: 500;
+}
+
+.contact-item p {
+	font-size: var(--font-size-sm);
+	color: var(--muted-foreground);
+	margin-bottom: var(--spacing-1);
+}
+
+.contact-item p:last-child {
+	margin-bottom: 0;
+}
