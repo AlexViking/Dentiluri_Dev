@@ -1,5 +1,5 @@
 /**
- * Language Switcher Component for BrightSmile Dental Website
+ * Language Switcher Component for Dentiluri Website
  * Provides multi-language support functionality
  */
 
