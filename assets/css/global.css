@@ -11,7 +11,7 @@
 	--card-foreground: hsl(222.2, 84%, 4.9%);
 	--popover: hsl(0, 0%, 100%);
 	--popover-foreground: hsl(222.2, 84%, 4.9%);
-	--primary: hsl(173, 80%, 40%);
+	--primary: hsl(167.8, 40.5%, 47.5%);
 	--primary-foreground: hsl(210, 40%, 98%);
 	--secondary: hsl(210, 40%, 96.1%);
 	--secondary-foreground: hsl(222.2, 47.4%, 11.2%);
@@ -23,7 +23,7 @@
 	--destructive-foreground: hsl(210, 40%, 98%);
 	--border: hsl(214.3, 31.8%, 91.4%);
 	--input: hsl(214.3, 31.8%, 91.4%);
-	--ring: hsl(173, 80%, 40%);
+	--ring: hsl(167.8, 40.5%, 47.5%);
 	--radius: 0.5rem;
 
 	/* Shadows*/
@@ -71,7 +71,7 @@
 	--card-foreground: hsl(210, 40%, 98%);
 	--popover: hsl(222.2, 84%, 4.9%);
 	--popover-foreground: hsl(210, 40%, 98%);
-	--primary: hsl(173, 80%, 40%);
+	--primary: hsl(167.8, 40.5%, 47.5%);
 	--primary-foreground: hsl(222.2, 47.4%, 11.2%);
 	--secondary: hsl(217.2, 32.6%, 17.5%);
 	--secondary-foreground: hsl(210, 40%, 98%);
@@ -83,7 +83,7 @@
 	--destructive-foreground: hsl(210, 40%, 98%);
 	--border: hsl(217.2, 32.6%, 17.5%);
 	--input: hsl(217.2, 32.6%, 17.5%);
-	--ring: hsl(173, 80%, 40%);
+	--ring: hsl(167.8, 40.5%, 47.5%);
 }
 
 /* === Reset and Base Styles === */
