@@ -48,6 +48,20 @@ function renderHeader(headerElement) {
 	// Get current page path for active state
 	const currentPath = window.location.pathname.split('/').pop() || PAGES.HOME;
 
+	/**
+	 * Dev
+	 * If you need to add "Appointment Button" here it is: 
+	 * Place after "<a href="tel:5551234567"" 
+	 * 
+	 * <a href="appointment.html" class="btn btn-primary">
+		<span data-i18n="common.bookAppointment">Book Appointment</span>
+		</a>
+
+		For mobile:
+		<a href="appointment.html" class="btn btn-primary" data-i18n="common.bookAppointment">Book Appointment</a>
+
+	*/
+
 
 
 	// Create header HTML
@@ -125,10 +139,6 @@ function renderHeader(headerElement) {
     	        </svg>
     	        <span data-i18n="common.phone">(555) 123-4567</span>
     	      </a>
-	
-    	      <a href="appointment.html" class="btn btn-primary">
-    	        <span data-i18n="common.bookAppointment">Book Appointment</span>
-    	      </a>
     	    </div>
 	
     	    <div class="mobile-actions">
@@ -188,7 +198,6 @@ function renderHeader(headerElement) {
     	      <a href="about.html" class="nav-link ${currentPath === PAGES.ABOUT ? 'active' : ''}" data-i18n="nav.about">About</a>
     	      <a href="services.html" class="nav-link ${currentPath === PAGES.SERVICES ? 'active' : ''}" data-i18n="nav.services">Services</a>
     	      <a href="contact.html" class="nav-link ${currentPath === PAGES.CONTACT ? 'active' : ''}" data-i18n="nav.contact">Contact</a>
-    	      <a href="appointment.html" class="btn btn-primary" data-i18n="common.bookAppointment">Book Appointment</a>
     	    </div>
     	  </nav>
     	</div>
