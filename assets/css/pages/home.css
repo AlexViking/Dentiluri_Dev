@@ -1,1 +1,73 @@
-/* TODO.. */
+/* ==========================================
+ HOME PAGE CSS - Dentiluri Website
+  STYLES SPECIFIC TO HOMEPAGE
+========================================== */
+
+/* === Hero section === */
+.hero-section{
+    padding: var(--spacing-16);
+    background: linear-gradient(to bottom, var(--background), color-mix(in srgb, var(--primary) 10%, var(--background)));
+}
+.hero-grid{
+    align-items: center;
+    display: grid;
+    gap: var(--spacing-6);
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing-4);
+}
+.hero-text{
+    margin-bottom: var(--spacing-6);
+}
+.hero-text h1{
+    font-size: var(--font-size-4xl);
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: var(--spacing-4);
+}
+.hero-text p{
+    font-size: var(--font-size-lg);
+    color: var(--muted-foreground);
+    max-width: 600px;
+}
+.hero-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+.hero-image{
+    display: flex;
+    justify-content: center;
+}
+.hero-image img{
+    border-radius: var(--radius);
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 12/9;
+}
+@media (min-width: 400px) {
+    .hero-buttons{
+        flex-direction: row;
+    }
+}    
+@media (min-width: 1024px) {
+    .hero-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero-text h1{
+        font-size: var(--font-size-6xl);
+
+    }
+    .hero-image {
+        order: 2;
+    }
+}
+
+/* === services section === */
+/* === team section === */
+/* === testimonials section === */
+/* === contact section === */
