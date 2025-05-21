@@ -68,6 +68,25 @@
 }
 
 /* === services section === */
+.services-section{
+    padding: var(--spacing-16);
+}
+.services-grid{
+    display: grid;
+    gap: var(--spacing-6);
+    margin-top: var(--spacing-12);
+}
+
+@media (min-width: 768px) {
+    .services-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}    
+@media (min-width: 1024px) {
+    .services-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 /* === team section === */
 /* === testimonials section === */
 /* === contact section === */
