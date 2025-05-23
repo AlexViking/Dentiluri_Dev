@@ -88,5 +88,32 @@
     }
 }
 /* === team section === */
+.team-section{
+    padding: var(--spacing-16);
+    background-color: color-mix(in srgb, var(--primary) 10%, var(--background));
+}
+.dark .team-section{
+    
+    background-color: color-mix(in srgb, var(--primary) 5%, var(--background));
+}
+.team-grid{
+    display: grid;
+    gap: var(--spacing-8);
+    margin: var(--spacing-12);
+}
+@media (
+    min-width: 768px
+){
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (
+    min-width: 1024px
+){
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 /* === testimonials section === */
 /* === contact section === */
