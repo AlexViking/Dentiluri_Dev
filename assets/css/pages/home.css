@@ -116,4 +116,32 @@
     }
 }
 /* === testimonials section === */
+.testimonials-section{
+    padding: var(--spacing-16);
+}
+.testimonials-content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4)
+}
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6)   
+}
+.appointment-content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4)
+}
+.features{
+    margin: var(--spacing-4);
+}
 /* === contact section === */
+.contact-section{
+    padding: var(--spacing-16);
+    background-color: color-mix(in srgb, var(--primary) 10%, var(--background)); 
+}
+.dark .contact-section{
+    background-color: color-mix(in srgb, var(--primary) 5%, var(--background)); 
+}
