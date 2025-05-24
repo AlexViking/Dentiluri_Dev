@@ -12,10 +12,17 @@
 		color-mix(in srgb, var(--primary) 10%, var(--background))
 	);
 }
+.dark .hero-section {
+	background: linear-gradient(
+		to bottom,
+		var(--background),
+		color-mix(in srgb, var(--primary) 5%, var(--background))
+	);
+}
 .hero-grid {
-	align-items: center;
 	display: grid;
 	gap: var(--spacing-6);
+	align-items: center;
 }
 .hero-content {
 	display: flex;
@@ -60,7 +67,7 @@
 }
 @media (min-width: 1024px) {
 	.hero-grid {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: repeat(2, 1fr);
 	}
 	.hero-text h1 {
 		font-size: var(--font-size-6xl);
