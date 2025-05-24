@@ -57,7 +57,24 @@
 		"team": {
 			"title": "Meet Our Dental Team",
 			"subtitle": "Our experienced dentists and staff are dedicated to providing you with the highest quality care.",
-			"meetFullTeam": "Meet Our Full Team"
+			"meetFullTeam": "Meet Our Full Team",
+			"teamInfo": {
+				"dr1": {
+					"name": "Dr. Sarah Johnson",
+					"title": "General Dentist",
+					"bio": "Dr. Johnson has over 15 years of experience in general and cosmetic dentistry."
+				},
+				"dr2": {
+					"name": "Dr. Michael Chen",
+					"title": "Orthodontist",
+					"bio": "Dr. Chen specializes in orthodontics and is an expert in Invisalign treatments."
+				},
+				"dr3": {
+					"name": "Dr. Emily Rodriguez",
+					"title": "Pediatric Dentist",
+					"bio": "Dr. Rodriguez loves working with children and making dental visits fun and stress-free."
+				}
+			}
 		},
 		"testimonials": {
 			"title": "What Our Patients Say",
