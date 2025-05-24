@@ -21,7 +21,9 @@
 	"home": {
 		"hero": {
 			"title": "Healthy & Beautiful Smiles, Guaranteed",
-			"subtitle": "Trust our experienced team for comprehensive dental care. We're dedicated to your long-term oral health and a smile you'll love."
+			"subtitle": "Trust our experienced team for comprehensive dental care. We're dedicated to your long-term oral health and a smile you'll love.",
+			"btn1": "Book an Appointment",
+			"btn2": "Our Services"
 		},
 		"services": {
 			"title": "Comprehensive Dental Care",
@@ -55,11 +57,38 @@
 		"team": {
 			"title": "Meet Our Dental Team",
 			"subtitle": "Our experienced dentists and staff are dedicated to providing you with the highest quality care.",
-			"meetFullTeam": "Meet Our Full Team"
+			"meetFullTeam": "Meet Our Full Team",
+			"teamInfo": {
+				"dr1": {
+					"name": "Dr. Sarah Johnson",
+					"title": "General Dentist",
+					"bio": "Dr. Johnson has over 15 years of experience in general and cosmetic dentistry."
+				},
+				"dr2": {
+					"name": "Dr. Michael Chen",
+					"title": "Orthodontist",
+					"bio": "Dr. Chen specializes in orthodontics and is an expert in Invisalign treatments."
+				},
+				"dr3": {
+					"name": "Dr. Emily Rodriguez",
+					"title": "Pediatric Dentist",
+					"bio": "Dr. Rodriguez loves working with children and making dental visits fun and stress-free."
+				}
+			}
 		},
 		"testimonials": {
 			"title": "What Our Patients Say",
-			"badge": "Testimonials"
+			"badge": "Testimonials",
+			"testimonialList": {
+				"item1": {
+					"author": "- Jennifer L.",
+					"text": "I've been coming to Dentiluri for years, and I've always had a positive experience. The staff is friendly, and Dr. Johnson is thorough and gentle."
+				},
+				"item2": {
+					"author": "- Mark T.",
+					"text": "My kids love going to Dr. Rodriguez! She makes them feel comfortable and explains everything in a way they can understand. Highly recommend for families."
+				}
+			}
 		},
 		"appointment": {
 			"title": "Book Your Appointment",
