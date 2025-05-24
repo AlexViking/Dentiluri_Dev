@@ -1,1 +1,18 @@
-/* TODO */
+/* hero section  */
+.hero-section{
+    padding: var(--spacing-16) 0;
+    background: linear-gradient(to bottom, var(--background), color-mix(in srgb, var(--primary) 10%, var(--background)));
+    
+    
+}
+.dark .hero-section{
+ background: linear-gradient(to bottom, var(--background), color-mix(in srgb, var(--primary) 5%, var(--background)));
+
+}
+.hero-subtitle{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--muted-foreground);
+    font-size: var(--font-size-lg);
+}
