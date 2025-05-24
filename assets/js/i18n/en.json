@@ -21,7 +21,9 @@
 	"home": {
 		"hero": {
 			"title": "Healthy & Beautiful Smiles, Guaranteed",
-			"subtitle": "Trust our experienced team for comprehensive dental care. We're dedicated to your long-term oral health and a smile you'll love."
+			"subtitle": "Trust our experienced team for comprehensive dental care. We're dedicated to your long-term oral health and a smile you'll love.",
+			"btn1": "Book an Appointment",
+			"btn2": "Our Services"
 		},
 		"services": {
 			"title": "Comprehensive Dental Care",
