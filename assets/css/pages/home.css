@@ -123,7 +123,7 @@
 
 /* === testimonials section === */
 .testimonials-section {
-	padding: var(--spacing-16);
+	padding: var(--spacing-16) 0;
 }
 .testimonials-content {
 	display: flex;
@@ -135,17 +135,20 @@
 	flex-direction: column;
 	gap: var(--spacing-6);
 }
+
+/* === Appointment Content === */
 .appointment-content {
 	display: flex;
 	flex-direction: column;
 	gap: var(--spacing-4);
 }
 .features {
-	margin: var(--spacing-4);
+	margin: var(--spacing-4) 0;
 }
+
 /* === contact section === */
 .contact-section {
-	padding: var(--spacing-16);
+	padding: var(--spacing-16) 0;
 	background-color: color-mix(in srgb, var(--primary) 10%, var(--background));
 }
 .dark .contact-section {

@@ -78,7 +78,17 @@
 		},
 		"testimonials": {
 			"title": "What Our Patients Say",
-			"badge": "Testimonials"
+			"badge": "Testimonials",
+			"testimonialList": {
+				"item1": {
+					"author": "- Jennifer L.",
+					"text": "I've been coming to Dentiluri for years, and I've always had a positive experience. The staff is friendly, and Dr. Johnson is thorough and gentle."
+				},
+				"item2": {
+					"author": "- Mark T.",
+					"text": "My kids love going to Dr. Rodriguez! She makes them feel comfortable and explains everything in a way they can understand. Highly recommend for families."
+				}
+			}
 		},
 		"appointment": {
 			"title": "Book Your Appointment",
