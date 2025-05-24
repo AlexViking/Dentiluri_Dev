@@ -12,5 +12,22 @@
     margin-right: auto;
     color: var(--muted-foreground);
     font-size: var(--font-size-lg);
+
+};
+/* story-section */
+.story-section {
+    padding: var(--spacing-16);
+};
+.rounded-img {
+    border-radius: var(--radius);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+};
+.content p {
+    color: var(--muted-foreground);
     
 }
