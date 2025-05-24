@@ -29,5 +29,54 @@
 };
 .content p {
     color: var(--muted-foreground);
-    
-}
+
+};
+/* team-section  */
+.team-section {
+    padding:var(--spacing-16) ;
+    background: linear-gradient(to bottom, var(--background), color-mix(in srgb, var(--primary) 10%, var(--background)));
+};
+.dark .team-section {
+    background: linear-gradient(to bottom, var(--background), color-mix(in srgb, var(--primary) 5%, var(--background)));  
+};
+.team-grid {
+    display: grid;
+    gap: var(--spacing-8);
+    margin-top: var(--spacing-12);
+};
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+};
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 9999px;
+    object-fit: cover;
+    margin-bottom: var(--spacing-4);
+};
+.member-info h3 {
+    margin-bottom: var(--spacing-2);
+};
+.member-title {
+    color: var(--primary);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    margin-bottom: var(--spacing-2);
+};
+.member-bio {
+    color: var(--muted-foreground);
+    font-size: var(--font-size-sm);
+};
+@media (min-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+};
+@media (min-width: 1024px) {
+    .team-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+};
