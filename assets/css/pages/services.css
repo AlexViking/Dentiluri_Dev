@@ -1,1 +1,225 @@
-/* TODO. */
+/* ==========================================
+  SERVICES PAGE CSS - Dentiluri Website
+  Styles specific to the services page
+========================================== */
+
+/* === Hero Section === */
+.hero-section {
+	padding: var(--spacing-16) 0;
+	background: linear-gradient(
+		to bottom,
+		var(--background),
+		color-mix(in srgb, var(--primary) 10%, var(--background))
+	);
+}
+
+.dark .hero-section {
+	background: linear-gradient(
+		to bottom,
+		var(--background),
+		color-mix(in srgb, var(--primary) 5%, var(--background))
+	);
+}
+
+.hero-subtitle {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--muted-foreground);
+	font-size: var(--font-size-lg);
+}
+
+/* === Service Section === */
+.service-section {
+	padding: var(--spacing-16) 0;
+}
+
+.alt-section {
+	background-color: color-mix(in srgb, var(--primary) 10%, var(--background));
+}
+
+.dark .alt-section {
+	background-color: color-mix(in srgb, var(--primary) 5%, var(--background));
+}
+
+.rounded-img {
+	border-radius: var(--radius);
+	width: 100%;
+	height: auto;
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
+	object-position: center;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.order-last {
+		order: 2;
+	}
+}
+
+.content p {
+	color: var(--muted-foreground);
+}
+
+.services-list {
+	margin-top: var(--spacing-6);
+}
+
+.service-item {
+	display: flex;
+	gap: var(--spacing-2);
+	margin-bottom: var(--spacing-3);
+}
+
+.check-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 1.5rem;
+	color: var(--primary);
+}
+
+.check-icon .icon {
+	width: 1rem;
+	height: 1rem;
+}
+
+.service-item p {
+	margin-bottom: 0;
+	color: var(--foreground);
+}
+
+/* === Specialized Services Section === */
+.specialized-section {
+	padding: var(--spacing-16) 0;
+}
+
+.specialized-grid {
+	display: grid;
+	gap: var(--spacing-8);
+	margin-top: var(--spacing-12);
+}
+
+.service-card {
+	display: flex;
+	flex-direction: column;
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+	overflow: hidden;
+	background-color: var(--card);
+	box-shadow: var(--shadow-sm);
+	transition: box-shadow var(--transition-fast),
+		transform var(--transition-fast);
+}
+
+.service-card:hover {
+	box-shadow: var(--shadow-md);
+	transform: translateY(-2px);
+}
+
+.card-header {
+	padding: var(--spacing-6);
+	border-bottom: 1px solid var(--border);
+}
+
+.card-header h3 {
+	margin-bottom: var(--spacing-1);
+}
+
+.card-header p {
+	color: var(--muted-foreground);
+	font-size: var(--font-size-sm);
+	margin-bottom: 0;
+}
+
+.card-content {
+	padding: var(--spacing-6);
+	flex-grow: 1;
+}
+
+.card-content p {
+	color: var(--muted-foreground);
+	font-size: var(--font-size-sm);
+	margin-bottom: 0;
+}
+
+.card-footer {
+	padding: var(--spacing-6);
+	border-top: 1px solid var(--border);
+}
+
+.card-footer .btn {
+	width: 100%;
+	justify-content: center;
+}
+
+@media (min-width: 768px) {
+	.specialized-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1024px) {
+	.specialized-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* === Insurance Section === */
+.insurance-section {
+	padding: var(--spacing-16) 0;
+}
+
+.insurance-grid {
+	display: grid;
+	gap: var(--spacing-6);
+	margin: var(--spacing-12) 0;
+}
+
+.insurance-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: var(--spacing-6);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow-sm);
+	background-color: var(--card);
+}
+
+.insurance-card h3 {
+	margin-bottom: var(--spacing-2);
+}
+
+.insurance-card p {
+	color: var(--muted-foreground);
+	margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+	.insurance-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* === CTA Section === */
+.cta-section {
+	padding: var(--spacing-16) 0;
+}
+
+.cta-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-4);
+	margin-top: var(--spacing-6);
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width: 400px) {
+	.cta-buttons {
+		flex-direction: row;
+	}
+}
