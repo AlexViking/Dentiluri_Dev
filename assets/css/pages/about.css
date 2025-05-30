@@ -1,1 +1,219 @@
-/* TODO. */
+/* ==========================================
+  ABOUT PAGE CSS - Dentiluri Website
+  Styles specific to the about page
+========================================== */
+
+/* === Hero Section === */
+.hero-section {
+	padding: var(--spacing-16) 0;
+	background: linear-gradient(
+		to bottom,
+		var(--background),
+		color-mix(in srgb, var(--primary) 10%, var(--background))
+	);
+}
+
+.dark .hero-section {
+	background: linear-gradient(
+		to bottom,
+		var(--background),
+		color-mix(in srgb, var(--primary) 5%, var(--background))
+	);
+}
+
+.hero-subtitle {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--muted-foreground);
+	font-size: var(--font-size-lg);
+}
+
+/* === Story Section === */
+.story-section {
+	padding: var(--spacing-16) 0;
+}
+
+.rounded-img {
+	border-radius: var(--radius);
+	width: 100%;
+	height: auto;
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
+	object-position: center;
+	margin: 0 auto;
+}
+
+.content p {
+	color: var(--muted-foreground);
+}
+
+/* === Team Section === */
+.team-section {
+	padding: var(--spacing-16) 0;
+	background-color: color-mix(in srgb, var(--primary) 10%, var(--background));
+}
+
+.dark .team-section {
+	background-color: color-mix(in srgb, var(--primary) 5%, var(--background));
+}
+
+.team-grid {
+	display: grid;
+	gap: var(--spacing-8);
+	margin-top: var(--spacing-12);
+}
+
+.team-member {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.team-member img {
+	width: 200px;
+	height: 200px;
+	border-radius: 9999px;
+	object-fit: cover;
+	margin-bottom: var(--spacing-4);
+}
+
+.member-info h3 {
+	margin-bottom: var(--spacing-2);
+}
+
+.member-title {
+	color: var(--primary);
+	font-size: var(--font-size-sm);
+	font-weight: 500;
+	margin-bottom: var(--spacing-2);
+}
+
+.member-bio {
+	color: var(--muted-foreground);
+	font-size: var(--font-size-sm);
+}
+
+@media (min-width: 768px) {
+	.team-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1024px) {
+	.team-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* === Mission Section === */
+.mission-section {
+	padding: var(--spacing-16) 0;
+}
+
+.values {
+	margin-top: var(--spacing-6);
+}
+
+.value-item {
+	display: flex;
+	gap: var(--spacing-4);
+	margin-bottom: var(--spacing-4);
+}
+
+.value-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 9999px;
+	background-color: color-mix(in srgb, var(--primary) 15%, transparent);
+	color: var(--primary);
+}
+
+.value-item h3 {
+	font-weight: 500;
+	margin-bottom: var(--spacing-1);
+}
+
+.value-item p {
+	font-size: var(--font-size-sm);
+	color: var(--muted-foreground);
+	margin-bottom: var(--spacing-2);
+}
+
+/* === Facility Section === */
+.facility-section {
+	padding: var(--spacing-16) 0;
+	background-color: color-mix(in srgb, var(--primary) 10%, var(--background));
+}
+
+.dark .facility-section {
+	background-color: color-mix(in srgb, var(--primary) 5%, var(--background));
+}
+
+.facility-grid {
+	display: grid;
+	gap: var(--spacing-8);
+	margin-top: var(--spacing-12);
+}
+
+.facility-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.facility-item img {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	border-radius: var(--radius);
+	margin-bottom: var(--spacing-4);
+}
+
+.facility-item h3 {
+	margin-bottom: var(--spacing-2);
+}
+
+.facility-item p {
+	color: var(--muted-foreground);
+	font-size: var(--font-size-sm);
+}
+
+@media (min-width: 768px) {
+	.facility-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1024px) {
+	.facility-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* === CTA Section === */
+.cta-section {
+	padding: var(--spacing-16) 0;
+}
+
+.cta-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-4);
+	margin-top: var(--spacing-6);
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width: 400px) {
+	.cta-buttons {
+		flex-direction: row;
+	}
+}
