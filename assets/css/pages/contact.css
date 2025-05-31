@@ -1,1 +1,197 @@
-/* TODO */
+/* ==========================================
+  CONTACT PAGE CSS - Dentiluri Website
+  Styles specific to the contact page
+========================================== */
+
+/* === Hero Section === */
+.hero-section {
+	padding: var(--spacing-16) 0;
+	background: linear-gradient(
+		to bottom,
+		var(--background),
+		color-mix(in srgb, var(--primary) 10%, var(--background))
+	);
+}
+
+.dark .hero-section {
+	background: linear-gradient(
+		to bottom,
+		var(--background),
+		color-mix(in srgb, var(--primary) 5%, var(--background))
+	);
+}
+
+.hero-subtitle {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--muted-foreground);
+	font-size: var(--font-size-lg);
+}
+
+/* === Contact Section === */
+.contact-section {
+	padding: var(--spacing-16) 0;
+}
+
+.contact-grid {
+	display: grid;
+	gap: var(--spacing-10);
+}
+
+.section-header {
+	margin-bottom: var(--spacing-6);
+}
+
+/* Contact Info */
+.contact-details {
+	margin-bottom: var(--spacing-8);
+}
+
+.contact-item {
+	display: flex;
+	align-items: flex-start;
+	gap: var(--spacing-4);
+	margin-bottom: var(--spacing-6);
+}
+
+.contact-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	min-width: 2.5rem;
+	border-radius: 9999px;
+	background-color: color-mix(in srgb, var(--primary) 15%, transparent);
+}
+
+.contact-icon .icon {
+	color: var(--primary);
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.contact-item h3 {
+	margin-bottom: var(--spacing-1);
+	font-weight: 500;
+}
+
+.contact-item p {
+	font-size: var(--font-size-sm);
+	color: var(--muted-foreground);
+	margin-bottom: var(--spacing-1);
+}
+
+.contact-item p:last-child {
+	margin-bottom: 0;
+}
+
+/* Office Hours */
+.office-hours {
+	margin-bottom: var(--spacing-8);
+}
+
+.office-hours h3 {
+	margin-bottom: var(--spacing-4);
+}
+
+.hours-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--spacing-2);
+	font-size: var(--font-size-sm);
+}
+
+.hours-grid div:nth-child(even) {
+	text-align: right;
+}
+
+/* Social Links */
+.social-links h3 {
+	margin-bottom: var(--spacing-4);
+}
+
+.social-icons {
+	display: flex;
+	gap: var(--spacing-4);
+}
+
+.social-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 9999px;
+	background-color: var(--muted);
+	color: var(--muted-foreground);
+	transition: all var(--transition-fast);
+}
+
+.social-icon:hover {
+	background-color: var(--primary);
+	color: var(--primary-foreground);
+	transform: translateY(-2px);
+}
+
+.social-icon .icon {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+/* Contact Form */
+.contact-form {
+	background-color: var(--card);
+	padding: var(--spacing-6);
+	border-radius: var(--radius);
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow-md);
+}
+
+/* === Map Section === */
+.map-section {
+	padding: var(--spacing-16) 0;
+	background-color: color-mix(in srgb, var(--primary) 10%, var(--background));
+}
+
+.dark .map-section {
+	background-color: color-mix(in srgb, var(--primary) 5%, var(--background));
+}
+
+.map-container {
+	height: 400px;
+	border-radius: var(--radius);
+	overflow: hidden;
+	border: 1px solid var(--border);
+	box-shadow: var(--shadow-md);
+	margin-top: var(--spacing-8);
+}
+
+/* === CTA Section === */
+.cta-section {
+	padding: var(--spacing-16) 0;
+}
+
+.cta-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-4);
+	margin-top: var(--spacing-6);
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width: 400px) {
+	.cta-buttons {
+		flex-direction: row;
+	}
+}
+
+/* Responsive Layout */
+@media (min-width: 1024px) {
+	.contact-grid {
+		grid-template-columns: 1fr 1fr;
+		gap: var(--spacing-12);
+	}
+}
