@@ -242,7 +242,7 @@ function createMapMarker() {
 	marker.className = 'map-marker';
 	marker.innerHTML = `
     <div class="marker-popup">
-      <h3>BrightSmile Dental</h3>
+      <h3>Dentiluri</h3>
       <p>123 Dental Way, Cityville, ST 12345</p>
       <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Get Directions</a>
     </div>
