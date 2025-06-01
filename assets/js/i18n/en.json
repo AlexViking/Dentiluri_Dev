@@ -22,7 +22,7 @@
 		"hero": {
 			"title": "Healthy & Beautiful Smiles, Guaranteed",
 			"subtitle": "Trust our experienced team for comprehensive dental care. We're dedicated to your long-term oral health and a smile you'll love.",
-			"btn1": "Book an Appointment",
+			"btn1": "Call Now",
 			"btn2": "Our Services"
 		},
 		"services": {
@@ -106,7 +106,7 @@
 				"title": "Insurance Accepted",
 				"description": "We work with most major insurance providers"
 			},
-			"scheduleNow": "Schedule Now"
+			"callNow": "Call Now"
 		},
 		"contact": {
 			"title": "Contact Us",
@@ -179,7 +179,9 @@
 		},
 		"cta": {
 			"title": "Ready to Schedule?",
-			"subtitle": "We're accepting new patients and would love to welcome you to our dental family."
+			"subtitle": "We're accepting new patients and would love to welcome you to our dental family.",
+			"callNow": "Call Now",
+			"contactUs": "Contact Us"
 		}
 	},
 	"services": {
@@ -248,10 +250,6 @@
 				}
 			},
 			"moreInfo": "Contact Us for More Information"
-		},
-		"cta": {
-			"title": "Ready to Schedule?",
-			"subtitle": "Book your appointment today and take the first step toward a healthier smile."
 		}
 	},
 	"contact": {
@@ -310,67 +308,6 @@
 		"map": {
 			"title": "Find Us",
 			"subtitle": "We're conveniently located in downtown Cityville."
-		},
-		"cta": {
-			"title": "Ready to Schedule?",
-			"subtitle": "Book your appointment today and take the first step toward a healthier smile."
-		}
-	},
-	"appointment": {
-		"hero": {
-			"title": "Book Your Appointment",
-			"subtitle": "Schedule your dental visit online in just a few easy steps."
-		},
-		"form": {
-			"title": "Appointment Details",
-			"subtitle": "Please fill out the form to schedule your appointment. All fields are required.",
-			"firstName": "First name",
-			"lastName": "Last name",
-			"email": "Email",
-			"phone": "Phone",
-			"appointmentType": "Appointment Type",
-			"appointmentTypes": {
-				"select": "Select appointment type",
-				"checkup": "Regular Check-up & Cleaning",
-				"emergency": "Emergency Visit",
-				"consultation": "Consultation",
-				"cosmetic": "Cosmetic Dentistry",
-				"restorative": "Restorative Treatment",
-				"orthodontic": "Orthodontic Treatment",
-				"pediatric": "Pediatric Dentistry"
-			},
-			"preferredDentist": "Preferred Dentist (Optional)",
-			"dentists": {
-				"noPreference": "No preference",
-				"drJohnson": "Dr. Sarah Johnson",
-				"drChen": "Dr. Michael Chen",
-				"drRodriguez": "Dr. Emily Rodriguez",
-				"drWilson": "Dr. James Wilson"
-			},
-			"newPatient": "Are you a new patient?",
-			"yes": "Yes",
-			"no": "No",
-			"notes": "Additional Notes (Optional)",
-			"notesPlaceholder": "Please share any specific concerns or questions you have.",
-			"requestAppointment": "Request Appointment"
-		},
-		"timeSlots": {
-			"title": "Available Time Slots",
-			"subtitle": "Select a date and time that works best for you. Our team will confirm your appointment.",
-			"chooseDate": "Choose a Date",
-			"chooseTime": "Choose a Time",
-			"dateSub": "Select from available dates in the calendar below",
-			"timeSub": "Select from available time slots for April 15, 2025"
-		},
-		"expectation": {
-			"title": "What to Expect",
-			"subtitle": "Information for your upcoming appointment",
-			"points": [
-				"Please arrive 15 minutes early to complete any necessary paperwork.",
-				"Bring your insurance card and photo ID.",
-				"If you have dental x-rays from the past 6 months, please bring them with you."
-			],
-			"questions": "Questions? Contact Us"
 		}
 	}
 }
