@@ -1,10 +1,7 @@
 /**
- *
  * Main JavaScript file for Dentiluri Website
  * Handles core functionality, routing, and component initialization
-*/
-
-// Import component modules
+ */
 
 // Import component modules
 import { initializeHeader } from './components/header.js';
@@ -57,7 +54,12 @@ function handleLinkClick(event) {
 	const href = event.currentTarget.getAttribute('href');
 
 	// Only handle internal links
-	if (href && href.startsWith('/') || href.indexOf('://') === -1) {
+	if (href && (href.startsWith('/') || href.indexOf('://') === -1)) {
+		// Skip external links and anchor links
+		if (href.startsWith('#') || href.startsWith('tel:') || href.startsWith('mailto:')) {
+			return;
+		}
+
 		// Prevent default link behavior
 		event.preventDefault();
 
@@ -140,6 +142,12 @@ function loadPage(url) {
 			// Update active navigation links
 			updateActiveNavLinks(url);
 
+			// IMPORTANT: Reapply translations using localStorage
+			const savedLanguage = localStorage.getItem('dentiluri-language');
+			if (savedLanguage && savedLanguage !== 'en') {
+				reapplyTranslations(savedLanguage);
+			}
+
 			// Initialize the page-specific JavaScript
 			initializePageScript(url);
 
@@ -154,6 +162,83 @@ function loadPage(url) {
 			loadErrorPage();
 			hideLoadingIndicator();
 		});
+}
+
+/**
+ * Reapply translations after page content changes
+ * @param {string} language - The language code to apply
+ */
+function reapplyTranslations(language) {
+	// Load and apply translations for the saved language
+	fetch(`assets/js/i18n/${language}.json`)
+		.then(response => {
+			if (!response.ok) {
+				throw new Error(`Failed to load translations for ${language}`);
+			}
+			return response.json();
+		})
+		.then(translations => {
+			applyTranslationsToDOM(translations);
+		})
+		.catch(error => {
+			console.error('Error reapplying translations:', error);
+		});
+}
+
+/**
+ * Apply translations to DOM elements
+ * @param {Object} translations - The translations object
+ */
+function applyTranslationsToDOM(translations) {
+	const elements = document.querySelectorAll('[data-i18n]');
+
+	elements.forEach(element => {
+		const key = element.getAttribute('data-i18n');
+		const translatedText = getTranslation(key, translations);
+
+		const params = element.getAttribute('data-i18n-params');
+		if (params) {
+			const formattedText = formatTranslation(translatedText, params.split(','));
+			element.textContent = formattedText;
+		} else {
+			element.textContent = translatedText;
+		}
+	});
+}
+
+/**
+ * Get translation from nested object using dot notation
+ * @param {string} key - Translation key (e.g., 'nav.home')
+ * @param {Object} translations - Translations object
+ * @returns {string} Translated text or key if not found
+ */
+function getTranslation(key, translations) {
+	const parts = key.split('.');
+	let result = translations;
+
+	for (const part of parts) {
+		if (result && result[part] !== undefined) {
+			result = result[part];
+		} else {
+			return key; // Return key if not found
+		}
+	}
+
+	return result;
+}
+
+/**
+ * Format translation with parameters
+ * @param {string} text - Text with placeholders like {0}, {1}
+ * @param {Array} params - Parameters to substitute
+ * @returns {string} Formatted text
+ */
+function formatTranslation(text, params) {
+	let formatted = text;
+	params.forEach((param, index) => {
+		formatted = formatted.replace(`{${index}}`, param);
+	});
+	return formatted;
 }
 
 /**
