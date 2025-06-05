@@ -272,7 +272,7 @@ p {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	padding: var(--spacing-3) var(--spacing-6);
+	padding: var(--spacing-3) var(--spacing-3);
 	font-weight: 500;
 	border-radius: var(--radius);
 	transition: all var(--transition-fast);

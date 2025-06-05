@@ -1,0 +1,328 @@
+/* ==========================================
+  JAVASCRIPT COMPONENTS CSS - Dentiluri Website
+  Styles for JavaScript-created components
+========================================== */
+
+/* === Loading Indicator === */
+.loading-indicator {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.loading-indicator.show {
+	opacity: 1;
+}
+
+.spinner {
+	width: 50px;
+	height: 50px;
+	border: 5px solid rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	border-top-color: var(--primary);
+	animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* === Form Messages === */
+.form-error,
+.form-success {
+	padding: var(--spacing-4);
+	border-radius: var(--radius);
+	margin-top: var(--spacing-4);
+	margin-bottom: var(--spacing-4);
+	display: none;
+}
+
+.form-error {
+	background-color: color-mix(in srgb, var(--destructive) 15%, transparent);
+	color: var(--destructive);
+	border: 1px solid var(--destructive);
+}
+
+.form-success {
+	background-color: color-mix(in srgb, #10b981 15%, transparent);
+	color: #10b981;
+	border: 1px solid #10b981;
+}
+
+/* === Modal === */
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.modal.show {
+	opacity: 1;
+}
+
+.modal-content {
+	background-color: var(--background);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow-lg);
+	max-width: 90%;
+	width: 600px;
+	max-height: 90vh;
+	overflow-y: auto;
+	position: relative;
+}
+
+.close-button {
+	position: absolute;
+	top: var(--spacing-4);
+	right: var(--spacing-4);
+	font-size: var(--font-size-2xl);
+	line-height: 1;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.modal-body {
+	padding: var(--spacing-6);
+}
+
+.modal-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 9999px;
+	object-fit: cover;
+	margin: 0 auto var(--spacing-6);
+	display: block;
+}
+
+.modal-info {
+	text-align: center;
+}
+
+.modal-role {
+	color: var(--primary);
+	font-size: var(--font-size-sm);
+	font-weight: 500;
+	margin-bottom: var(--spacing-2);
+}
+
+.modal-bio {
+	color: var(--muted-foreground);
+}
+
+/* === Lightbox === */
+.lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.lightbox.show {
+	opacity: 1;
+}
+
+.lightbox-content {
+	max-width: 90%;
+	max-height: 90vh;
+	position: relative;
+}
+
+.lightbox .close-button {
+	color: white;
+	top: -30px;
+	right: 0;
+}
+
+.lightbox-image {
+	max-width: 100%;
+	max-height: 80vh;
+	display: block;
+	margin: 0 auto;
+}
+
+.lightbox-title {
+	color: white;
+	text-align: center;
+	margin-top: var(--spacing-4);
+}
+
+/* === Tooltip === */
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip-text {
+	visibility: hidden;
+	position: absolute;
+	bottom: 125%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--popover);
+	color: var(--popover-foreground);
+	text-align: center;
+	padding: var(--spacing-2) var(--spacing-4);
+	border-radius: var(--radius);
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.3s;
+	white-space: nowrap;
+	box-shadow: var(--shadow-md);
+	border: 1px solid var(--border);
+	font-size: var(--font-size-sm);
+}
+
+.tooltip-text::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: var(--popover) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* === Accordion === */
+.accordion {
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	overflow: hidden;
+}
+
+.accordion-item {
+	border-bottom: 1px solid var(--border);
+}
+
+.accordion-item:last-child {
+	border-bottom: none;
+}
+
+.accordion-header {
+	padding: var(--spacing-4);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	background-color: var(--background);
+	transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+	background-color: var(--secondary);
+}
+
+.accordion-title {
+	font-weight: 500;
+	margin: 0;
+}
+
+.accordion-icon {
+	transition: transform 0.3s ease;
+}
+
+.accordion-icon.open {
+	transform: rotate(180deg);
+}
+
+.accordion-content {
+	padding: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content.open {
+	padding: var(--spacing-4);
+	max-height: 1000px; /* Arbitrary large value */
+}
+
+/* === Notifications === */
+.notification {
+	position: fixed;
+	bottom: var(--spacing-4);
+	right: var(--spacing-4);
+	padding: var(--spacing-4);
+	background-color: var(--background);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow-lg);
+	min-width: 300px;
+	max-width: 400px;
+	z-index: 1000;
+	transform: translateY(150%);
+	transition: transform 0.3s ease;
+}
+
+.notification.show {
+	transform: translateY(0);
+}
+
+.notification-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: var(--spacing-2);
+}
+
+.notification-title {
+	font-weight: 600;
+	margin: 0;
+}
+
+.notification-close {
+	cursor: pointer;
+}
+
+.notification-body {
+	color: var(--muted-foreground);
+}
+
+.notification-success {
+	border-left: 4px solid #10b981;
+}
+
+.notification-error {
+	border-left: 4px solid var(--destructive);
+}
+
+.notification-info {
+	border-left: 4px solid var(--primary);
+}
+
+.notification-warning {
+	border-left: 4px solid #f59e0b;
+}
