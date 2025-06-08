@@ -1,7 +1,8 @@
 {
 	"common": {
 		"siteName": "Dentiluri",
-		"phone": "(555) 123-4567",
+		"phone": "032 2 060 786",
+		"phone2": "555 602 500",
 		"bookAppointment": "Book Appointment",
 		"learnMore": "Learn More",
 		"contactUs": "Contact Us"
@@ -113,16 +114,16 @@
 			"subtitle": "Have questions or ready to schedule? Reach out to our friendly team.",
 			"location": {
 				"title": "Location",
-				"address": "123 Dental Way, Cityville, ST 12345"
+				"address": "Varketili Zemo Plateau II Micro/District, Building 25"
 			},
 			"phone": {
 				"title": "Phone"
 			},
 			"hours": {
 				"title": "Hours",
-				"weekdays": "Monday-Friday: 8am-6pm",
-				"saturday": "Saturday: 9am-2pm (Select Dates)",
-				"sunday": "Sunday: Closed"
+				"weekdays": "Monday-Friday: 10:00 - 19:00",
+				"saturday": "Saturday: 10:00 - 19:00",
+				"sunday": "Sunday: 10:00 - 17:00"
 			},
 			"form": {
 				"firstName": "First name",
@@ -262,30 +263,31 @@
 			"subtitle": "Have questions or ready to schedule? Reach out to our friendly team.",
 			"location": {
 				"title": "Location",
-				"address": "123 Dental Way, Cityville, ST 12345",
-				"detail": "Conveniently located in downtown Cityville with ample parking."
+				"address": "Varketili Zemo Plateau II Micro/District, Building 25",
+				"detail": "Conveniently located on Romanoz Khomleli Street, with ample parking."
 			},
 			"phone": {
 				"title": "Phone",
-				"number": "(555) 123-4567",
+				"number": "032 2 060 786",
+				"number2": "555 602 500",
 				"detail": "Call us during office hours to speak with our team."
 			},
 			"email": {
 				"title": "Email",
-				"address": "info@Dentiluri.com",
+				"address": "info@Dentiluri.ge",
 				"detail": "We'll respond to your email within 24 business hours."
 			}
 		},
 		"hours": {
 			"title": "Office Hours",
 			"weekdays": "Monday - Thursday",
-			"weekdayHours": "8:00 AM - 6:00 PM",
+			"weekdayHours": "10:00 - 19:00",
 			"friday": "Friday",
-			"fridayHours": "8:00 AM - 5:00 PM",
+			"fridayHours": "10:00 - 19:00",
 			"saturday": "Saturday",
-			"saturdayHours": "9:00 AM - 2:00 PM (Select Dates)",
+			"saturdayHours": "10:00 - 19:00",
 			"sunday": "Sunday",
-			"sundayHours": "Closed"
+			"sundayHours": "10:00 - 17:00"
 		},
 		"social": {
 			"title": "Follow Us",
@@ -307,7 +309,7 @@
 		},
 		"map": {
 			"title": "Find Us",
-			"subtitle": "We're conveniently located in downtown Cityville."
+			"subtitle": "Our location is on Romanoz Khomleli Street."
 		}
 	}
 }
